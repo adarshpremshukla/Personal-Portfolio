@@ -374,7 +374,7 @@ span{
     background: var(--second-bg-colour);
 }
 
-.education{
+.education, .experience{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,10 +387,19 @@ span{
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
+}
 
+.experience .experience-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .education-row .education-column{
+    flex: 1 1 40rem;
+}
+
+.experience-row .experience-column{
     flex: 1 1 40rem;
 }
 
@@ -399,9 +408,23 @@ span{
     margin: 0 0 1.5rem 2rem;
 }
 
-
+.experience-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
 
 .education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.experience-box .experience-content::before{
     content: '';
     position: absolute;
     top: 0;
@@ -421,6 +444,15 @@ span{
     overflow: hidden;
 }
 
+.experience-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+}
+
 .education-content .content::before{
     content: '';
     position: absolute;
@@ -431,12 +463,26 @@ span{
     background: var(--second-bg-colour);
     z-index: -1;
     transition: .5s;
-
 }
+
+.experience-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--second-bg-colour);
+    z-index: -1;
+    transition: .5s;
+}
+
 .education-content .content:hover:before{
     width: 100%;
+}
 
-
+.experience-content .content:hover:before{
+    width: 100%;
 }
 
 .education-content .content .year{
@@ -445,14 +491,34 @@ span{
     padding-bottom: .5rem;
 }
 
+.experience-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
 .education-content .content .year i{
     padding-right: .5rem;
 }
+
+.experience-content .content .year i{
+    padding-right: .5rem;
+}
+
 .education-content .content h3{
     font-size: 2rem;
 }
 
+.experience-content .content h3{
+    font-size: 2rem;
+}
+
 .education-content .content p{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+.experience-content .content p{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
