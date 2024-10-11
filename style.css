@@ -29,7 +29,14 @@ body{
     color: var(--text-color);
 }
 
-
+li::before {
+    position: absolute;
+    left: 0;
+}
+li {
+    padding-left: 20px; 
+    text-indent: -20px;
+}
 .header{
     position: fixed;
     top: 0;
@@ -48,12 +55,12 @@ body{
     background: var(--bg-color);
 }
 
-.logo{
+/* .logo{
     position: relative;
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;   
-}
+} */
 .navbar{
     position: relative;
 
@@ -103,7 +110,7 @@ section{
 }
 
 .home-content{
-    max-width: 60rem;
+    /* max-width: 60rem; */
     z-index: 99;
 
 }
@@ -131,7 +138,7 @@ section{
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-image: linear-gradient(var(--main-color), #000000);
     background-repeat: no-repeat;
     background-position: -33rem 0;
    
@@ -140,7 +147,7 @@ section{
 .home.show-animate .home-content .text-animate h3{
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
-    
+  
 }
 
 
@@ -173,7 +180,7 @@ section{
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34.5rem;
+    /* width: 34.5rem; */
     height: 5rem;
 }
 
@@ -413,7 +420,7 @@ span{
     margin: 0 0 1.5rem 2rem;
 }
 
-.education-box .education-content::before{
+/* .education-box .education-content::before{
     content: '';
     position: absolute;
     top: 0;
@@ -422,7 +429,7 @@ span{
     height: 2rem;
     background: var(--main-color);
     border-radius: 50%;
-}
+} */
 
 .experience-box .experience-content::before{
     content: '';
@@ -440,7 +447,7 @@ span{
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
-    margin-bottom: .2rem;
+    margin-bottom: 2rem;
     overflow: hidden;
 }
 
@@ -494,7 +501,7 @@ span{
 .experience-content .content .year{
     font-size: 1.5rem;
     color: var(--main-color);
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 .education-content .content .year i{
@@ -521,6 +528,7 @@ span{
 .experience-content .content p{
     font-size: 1.6rem;
     padding-top: .5rem;
+    margin-bottom: 5rem;
 }
 
 .skills{
@@ -894,7 +902,7 @@ span{
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--main-color);
+        background: #1c576e;
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
         z-index: 1;
         transition: .25s ease;
