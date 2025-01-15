@@ -1,2 +1,2 @@
 # Personal-Portfolio
-I have created a dynamic personal portfolio website that showcases my accomplishments and expertise.
+Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to effectively showcase my experience, skills, and projects. The website includes sections such as About Me, Projects, Skills, Education, and Contact Information, providing a comprehensive view of my professional background. To ensure a seamless user experience, the website was optimized for both mobile and desktop devices, delivering smooth performance across various screen sizes. I also prioritized clean and modular code practices, making it easy to update and scale the website for future enhancements as needed.
